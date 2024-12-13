@@ -1,0 +1,144 @@
+/* basic css reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{ margin: 0; }
+img{
+    display:block;
+    max-width: 100%;
+}
+/* basic css reset */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-title {
+    color: #2d4059;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.player-inputs {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.start-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2d4059;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: #1b2838;
+}
+.board {
+    margin: 20px 0;
+}
+
+
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.box {
+    width: 70px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9EDF9C;
+    border: 2px solid #2d4059;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.round-info, .turn-info {
+    font-size: 2rem;
+    color: #2d4059;
+}
+.dice {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #2d4059;
+}
+
+.game-actions button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.scorecard {
+    background-color: #9EDF9C;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.shut {
+    background-color: #ff6b6b;
+    color: white;
+    border-color: #d64545;
+    font-weight: bold;
+  }
+
+.winner {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+#winner-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+.again{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2d4059;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
